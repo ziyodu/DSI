@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+nav {
+  background-color: black;
+  width: 100%;
+  height: 80px;
+}
+nav img{
+  margin-top: 10px;
+}
+
+nav ul {
+  float: right;
+
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a:hover {
+  background: grey;
+  transition: 2s;
+}
+
+.checkbtn {
+  color: #fff;
+  float: right;
+  line-height: 100px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0 100px;
+}
+
+.left1 h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 133.69%;
+  /* or 64px */
+
+  color: #1f2e35;
+}
+
+.left1 h1 span {
+  color: #ee4248;
+}
+
+.left1 p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #30444e;
+}
+
+.left1 button {
+  background: #ee4248;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  width: 161px;
+  height: 53px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+section {
+  background: #f7f7f7;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  padding: 30px 100px;
+}
+
+.left2 img,
+.right1 img {
+  width: 100%;
+}
+
+.right2 {
+  padding-top: 70px;
+}
+
+.right2 h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 133.69%;
+}
+
+.right2 h2 span {
+  color: #ee4248;
+}
+
+.right2 p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #30444e;
+}
+
+.right2 p span {
+  color: #ee4248;
+}
+
+.center-h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 133.69%;
+  /* identical to box height, or 43px */
+
+  text-align: center;
+
+  color: #1f2e35;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.card button {
+  background: #ee4248;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  width: 119px;
+  height: 42px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+aside {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  padding: 30px 100px;
+  flex-wrap: wrap;
+
+}
+
+.card p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+
+  color: #30444E;
+}
+
+.card h2 span {
+  color: #ee4248;
+}
+
+footer {
+  width: 100%;
+
+  gap: 90px;
+  padding: 40px 400px;
+  display: flex;
+
+}
+
+.right3,
+.center3 p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 149.19%;
+  /* or 27px */
+
+
+  color: #263238;
+
+}
+
+.red-div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #ee4248;
+}
+@media all and (max-width: 1476px){
+  footer {
+    width: 100%;
+  
+    gap: 90px;
+    padding: 40px 200px;
+    display: flex;
+  
+  }
+}
+@media all and (max-width: 1317px){
+  header, section{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding: 30px 100px;
+  }
+  section{
+    flex-direction: column;
+  }
+
+  .left1{
+    text-align: center;
+  }
+  .right2{
+text-align: center;
+
+  }
+    
+}
+
+@media all and (max-width: 1022px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  .logo {
+    font-size: 30px;
+
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  footer {
+    width: 100%;
+  
+    gap: 90px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+  }
+}
+
+@media all and (max-width: 842px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(7, 2, 78);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+
+  }
+
+  nav ul li a {
+    font-size: 20px;
+
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+  }
+  .card{
+    text-align: center;
+  }
+}
